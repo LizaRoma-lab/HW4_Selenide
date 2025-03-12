@@ -25,7 +25,7 @@ public class WikiTest {
         $("[id=wiki-tab]").click();
 
         $$("ul li a").findBy(text("Soft Assertions")).click();
-        sleep(5000);
+
 
         $(".markdown-body").shouldHave(text(
                 """
@@ -40,7 +40,6 @@ public class WikiTest {
                             $("#second").should(visible).click();
                           }
                         }"""));
-        sleep(5000);
     }
 }
 
